@@ -44,7 +44,7 @@ export const services: Service[] = [
       { q: "Can you work around my household or business hours?", a: "Yes — we plan renovations around occupied homes and live commercial premises to keep disruption to a minimum." },
       { q: "Do you handle both residential and commercial jobs?", a: "Yes, renovations and alterations are roughly half our workload on each side." },
     ],
-    seoTitle: "Renovations & Alterations Christchurch | JRM Top Build",
+    seoTitle: "Renovations & Alterations Christchurch",
     seoDescription: "Residential and commercial renovations & alterations across Christchurch and Canterbury. Licensed, local, and project-managed start to finish.",
   },
   {
@@ -72,7 +72,7 @@ export const services: Service[] = [
       { q: "Can a pergola be attached to my existing house?", a: "Yes, we build both attached and freestanding pergolas depending on your section and preference." },
       { q: "How long does a typical pergola build take?", a: "Most residential pergolas are completed within one to two weeks of the build start date, weather permitting." },
     ],
-    seoTitle: "Pergola Builder Christchurch | JRM Top Build",
+    seoTitle: "Pergola Builder Christchurch",
     seoDescription: "Custom pergola design and construction in Christchurch. Attached or freestanding, consent guidance included. Get a free quote from JRM Top Build.",
   },
   {
@@ -100,7 +100,7 @@ export const services: Service[] = [
       { q: "What timber do you recommend for Christchurch's climate?", a: "We generally recommend treated pine or hardwood decking with the right fixings for Canterbury's temperature swings — we'll talk you through the options for your budget." },
       { q: "Can you replace an old, tired deck?", a: "Yes — re-decking and structural repairs to existing decks are a regular part of our work." },
     ],
-    seoTitle: "Deck Builder Christchurch | Decking Installation — JRM Top Build",
+    seoTitle: "Deck Builder Christchurch | Decking Installation",
     seoDescription: "Timber and composite decking built for Canterbury's weather. Ground-level to multi-level decks, repairs and re-decking. Free quotes from JRM Top Build.",
   },
   {
@@ -128,7 +128,7 @@ export const services: Service[] = [
       { q: "How long does a floor plank installation take?", a: "A single room is often a day or two; whole-property jobs are scoped individually depending on size." },
       { q: "Do you do commercial floor plank fit-outs?", a: "Yes — we handle both residential rooms and commercial fit-out flooring." },
     ],
-    seoTitle: "Floor Plank Installation Christchurch | JRM Top Build",
+    seoTitle: "Floor Plank Installation Christchurch",
     seoDescription: "Professional floor plank installation for homes and commercial fit-outs in Christchurch. Subfloor prep to finished floor. Free quotes from JRM Top Build.",
   },
   {
@@ -156,7 +156,7 @@ export const services: Service[] = [
       { q: "Do you handle the plumbing and electrical too?", a: "We coordinate licensed plumbers and electricians as part of the project so you only deal with one point of contact." },
       { q: "Can you renovate a bathroom in an older Christchurch home?", a: "Yes — a large share of our bathroom work is in older housing stock, including addressing dated waterproofing and layouts." },
     ],
-    seoTitle: "Bathroom Renovations Christchurch | JRM Top Build",
+    seoTitle: "Bathroom Renovations Christchurch",
     seoDescription: "Full and partial bathroom renovations in Christchurch — waterproofing, tiling, fixtures and layout changes. Free quotes from JRM Top Build.",
   },
 ];

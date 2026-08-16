@@ -40,7 +40,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${playfair.variable} ${oswald.variable} ${inter.variable} h-full antialiased`}
     >
       <body
-        className="flex min-h-full flex-col bg-off-white text-ink"
+        className="flex min-h-full flex-col bg-navy text-ink"
         suppressHydrationWarning
       >
         <JsonLd />
