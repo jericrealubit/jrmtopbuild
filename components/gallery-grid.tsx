@@ -42,6 +42,9 @@ function GalleryGrid() {
           <div key={item.id} className="relative">
             <PlaceholderImage
               label={`${item.categoryLabel} — ${item.suburb} (photo coming soon)`}
+              src={item.photo}
+              alt={`${item.categoryLabel} — ${item.suburb}`}
+              aspectClassName="aspect-square"
             />
             <Chip tone="default" className="absolute top-2 left-2 bg-navy/75">
               {item.categoryLabel}

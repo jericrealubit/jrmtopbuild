@@ -10,6 +10,7 @@ export interface Service {
   name: string;
   shortName: string;
   icon: ServiceIconKey;
+  photo?: string;
   summary: string;
   included: string[];
   process: { step: string; detail: string }[];
@@ -24,6 +25,7 @@ export const services: Service[] = [
     name: "Renovations & Alterations",
     shortName: "Renovations",
     icon: "renovations",
+    photo: "/photos/renovation.jpg",
     summary:
       "From single-room updates to full alterations, we plan and build changes to your home or commercial space with minimal disruption and a clear timeline.",
     included: [
@@ -52,6 +54,7 @@ export const services: Service[] = [
     name: "Pergolas",
     shortName: "Pergolas",
     icon: "pergolas",
+    photo: "/photos/pergola-1.jpg",
     summary:
       "A well-built pergola adds shade, structure and value to your outdoor space. We design and build pergolas to suit your section and your home.",
     included: [
@@ -80,6 +83,7 @@ export const services: Service[] = [
     name: "Decking",
     shortName: "Decking",
     icon: "decking",
+    photo: "/photos/decking.jpg",
     summary:
       "Timber decking built to last through Canterbury's weather — from a simple ground-level deck to a multi-level entertaining space.",
     included: [
@@ -108,6 +112,7 @@ export const services: Service[] = [
     name: "Floor Planks",
     shortName: "Floor Planks",
     icon: "floor-planks",
+    photo: "/photos/floor-planks.jpg",
     summary:
       "Floor plank installation for a clean, durable finish — laid properly the first time, whether it's a single room or a full property.",
     included: [
@@ -136,6 +141,7 @@ export const services: Service[] = [
     name: "Bathroom Renovations",
     shortName: "Bathrooms",
     icon: "bathroom",
+    photo: "/photos/bathroom-renovation.jpg",
     summary:
       "Full bathroom renovations from layout changes to fixtures and finishing — built to handle Christchurch's older housing stock as well as new builds.",
     included: [

@@ -57,7 +57,9 @@ function Hero() {
         </div>
         <PlaceholderImage
           label="Hero photo — finished job coming soon"
-          aspectClassName="aspect-[4/5]"
+          src="/photos/hero.jpg"
+          alt="Completed deck and pergola renovation by JRM Top Build"
+          aspectClassName="aspect-[4/3]"
         />
       </Container>
     </section>

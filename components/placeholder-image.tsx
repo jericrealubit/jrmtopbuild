@@ -1,15 +1,42 @@
+import Image from "next/image"
 import { ImageIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 function PlaceholderImage({
   label,
+  src,
+  alt,
   className,
   aspectClassName = "aspect-[4/3]",
+  sizes = "(min-width: 1024px) 50vw, 100vw",
 }: {
   label: string
+  src?: string
+  alt?: string
   className?: string
   aspectClassName?: string
+  sizes?: string
 }) {
+  if (src) {
+    return (
+      <div
+        className={cn(
+          "relative overflow-hidden rounded-[10px] border border-hairline",
+          aspectClassName,
+          className
+        )}
+      >
+        <Image
+          src={src}
+          alt={alt ?? label}
+          fill
+          sizes={sizes}
+          className="object-cover"
+        />
+      </div>
+    )
+  }
+
   return (
     <div
       className={cn(

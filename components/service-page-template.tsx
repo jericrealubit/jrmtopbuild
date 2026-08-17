@@ -60,6 +60,8 @@ function ServicePageTemplate({ service }: { service: Service }) {
             <PlaceholderImage
               key={n}
               label={`${service.name} — photo coming soon`}
+              src={n === 1 ? service.photo : undefined}
+              alt={n === 1 ? `${service.name} completed by JRM Top Build` : undefined}
             />
           ))}
         </div>
