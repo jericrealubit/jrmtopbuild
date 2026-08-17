@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JRM Top Build Ltd
 
-## Getting Started
+Marketing site for JRM Top Build Ltd, a Christchurch NZ building company offering renovations & alterations, pergolas, decking, floor planks and bathroom renovations.
 
-First, run the development server:
+**Live site:** [jrmtopbuild.nz](https://jrmtopbuild.nz/)
+
+![JRM Top Build site shown across desktop, laptop, tablet and mobile](.github/screenshot.png)
+
+## Tech stack
+
+**Framework**
+- [Next.js 16](https://nextjs.org) (App Router) + React 19 + TypeScript
+
+**Styling & UI**
+- [Tailwind CSS v4](https://tailwindcss.com)
+- [shadcn](https://ui.shadcn.com) components on [Base UI](https://base-ui.com)
+- [lucide-react](https://lucide.dev) icons
+- `class-variance-authority` + `tailwind-merge` for component variants
+- `next/font` — Playfair Display, Oswald, Inter
+
+**Forms & validation**
+- [Zod](https://zod.dev) schema validation
+- Next.js Server Actions (the `/contact` quote form)
+
+**Deployment**
+- [`@opennextjs/cloudflare`](https://opennext.js.org/cloudflare) + [Wrangler](https://developers.cloudflare.com/workers/wrangler/) — see [Deployment](#deployment) below
+
+## Pages
+
+| Page | URL |
+|---|---|
+| Home | [/](https://jrmtopbuild.nz/) |
+| About | [/about](https://jrmtopbuild.nz/about) |
+| Services (hub) | [/services](https://jrmtopbuild.nz/services) |
+| — Renovations & Alterations | [/services/renovations-and-alterations](https://jrmtopbuild.nz/services/renovations-and-alterations) |
+| — Pergolas | [/services/pergolas](https://jrmtopbuild.nz/services/pergolas) |
+| — Decking | [/services/decking](https://jrmtopbuild.nz/services/decking) |
+| — Floor Planks | [/services/floor-planks](https://jrmtopbuild.nz/services/floor-planks) |
+| — Bathroom Renovations | [/services/bathroom-renovations](https://jrmtopbuild.nz/services/bathroom-renovations) |
+| Gallery | [/gallery](https://jrmtopbuild.nz/gallery) |
+| Testimonials | [/testimonials](https://jrmtopbuild.nz/testimonials) |
+| Service Area | [/service-area](https://jrmtopbuild.nz/service-area) |
+| Contact / Get a Quote | [/contact](https://jrmtopbuild.nz/contact) |
+| Privacy | [/privacy](https://jrmtopbuild.nz/privacy) |
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Script | Description |
+|---|---|
+| `npm run dev` | Start the local dev server (Turbopack) |
+| `npm run build` | Production build |
+| `npm run start` | Run the production build locally |
+| `npm run lint` | ESLint |
+| `npm run preview` | Build and preview the Cloudflare Worker locally via Wrangler |
+| `npm run deploy` | Build and deploy to Cloudflare Workers |
+| `npm run upload` | Build and upload a gradual/versioned deployment |
+| `npm run cf-typegen` | Generate `cloudflare-env.d.ts` binding types |
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The site deploys to [Cloudflare Workers](https://workers.cloudflare.com) via the [`@opennextjs/cloudflare`](https://opennext.js.org/cloudflare) adapter (see `wrangler.jsonc` and `open-next.config.ts`). The repo is Git-connected to Cloudflare for CI deploys on push; `npm run deploy` handles a manual deploy.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `app/` — routes (App Router)
+- `components/` — shared UI, layout, and page-section components
+- `lib/` — site content/data (services, gallery, suburbs, testimonials) and the quote-form validation schema
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+See `CLAUDE.md` for a deeper architecture overview.
