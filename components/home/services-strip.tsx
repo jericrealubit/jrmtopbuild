@@ -22,6 +22,7 @@ function ServicesStrip() {
           <Link
             key={service.slug}
             href={`/services/${service.slug}`}
+            prefetch={false}
             className="group flex flex-col items-center text-center text-silver no-underline"
           >
             <IconBadge icon={getServiceIcon(service.icon)} />

@@ -10,7 +10,7 @@ function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-hairline bg-navy/95 backdrop-blur">
       <div className="mx-auto flex h-[76px] w-full max-w-[1140px] items-center justify-between px-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" prefetch={false} className="flex items-center gap-3">
           <Image
             src="/jrm-logo-round.png"
             alt="JRM Top Build Ltd logo"
@@ -27,12 +27,14 @@ function Header() {
         <nav aria-label="Primary" className="hidden items-center gap-7 md:flex">
           <Link
             href="/"
+            prefetch={false}
             className="font-oswald text-[0.82rem] tracking-[0.03em] text-silver uppercase hover:text-gold-light"
           >
             Home
           </Link>
           <Link
             href="/about"
+            prefetch={false}
             className="font-oswald text-[0.82rem] tracking-[0.03em] text-silver uppercase hover:text-gold-light"
           >
             About
@@ -41,6 +43,7 @@ function Header() {
           <div className="group relative">
             <Link
               href="/services"
+              prefetch={false}
               className="flex items-center gap-1 font-oswald text-[0.82rem] tracking-[0.03em] text-silver uppercase hover:text-gold-light"
               aria-haspopup="true"
             >
@@ -55,6 +58,7 @@ function Header() {
                 <Link
                   key={service.slug}
                   href={`/services/${service.slug}`}
+                  prefetch={false}
                   role="menuitem"
                   className="block rounded-[3px] px-3 py-2 text-sm text-silver hover:bg-gold/10 hover:text-gold-light"
                 >
@@ -66,18 +70,21 @@ function Header() {
 
           <Link
             href="/gallery"
+            prefetch={false}
             className="font-oswald text-[0.82rem] tracking-[0.03em] text-silver uppercase hover:text-gold-light"
           >
             Gallery
           </Link>
           <Link
             href="/testimonials"
+            prefetch={false}
             className="font-oswald text-[0.82rem] tracking-[0.03em] text-silver uppercase hover:text-gold-light"
           >
             Testimonials
           </Link>
           <Link
             href="/contact"
+            prefetch={false}
             className="font-oswald text-[0.82rem] tracking-[0.03em] text-silver uppercase hover:text-gold-light"
           >
             Contact
@@ -94,7 +101,7 @@ function Header() {
           <Button
             variant="gold"
             size="sm"
-            render={<Link href="/contact" />}
+            render={<Link href="/contact" prefetch={false} />}
             nativeButton={false}
             className="hidden md:inline-flex"
           >
