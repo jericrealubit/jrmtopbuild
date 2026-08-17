@@ -7,7 +7,7 @@ export const siteConfig = {
   url: "https://www.jrmtopbuild.nz",
   owner: "Ernesto Jr Villa Robarios",
   nzbn: "9429051799410",
-  phone: "021 490 094",
+  phone: "021 149 0094",
   phoneHref: "tel:+64211490094",
   email: "junrobarios@gmail.com",
   baseSuburb: "Hornby",
