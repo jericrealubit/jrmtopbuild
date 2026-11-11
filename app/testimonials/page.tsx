@@ -1,3 +1,13 @@
+import { notFound } from "next/navigation"
+
+// Hidden until real testimonials from the owner — restore by uncommenting.
+// The page 404s for now so placeholder quotes aren't shown or indexed.
+// To restore: delete the stub below and uncomment the original page.
+export default function TestimonialsPage() {
+  notFound()
+}
+
+/*
 import type { Metadata } from "next"
 import { Section } from "@/components/section"
 import { TestimonialCard } from "@/components/card"
@@ -34,3 +44,4 @@ export default function TestimonialsPage() {
     </>
   )
 }
+*/

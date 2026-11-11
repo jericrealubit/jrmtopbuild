@@ -38,10 +38,11 @@ Marketing site for JRM Top Build Ltd, a Christchurch NZ building company offerin
 | — Floor Planks | [/services/floor-planks](https://jrmtopbuild.nz/services/floor-planks) |
 | — Bathroom Renovations | [/services/bathroom-renovations](https://jrmtopbuild.nz/services/bathroom-renovations) |
 | Gallery | [/gallery](https://jrmtopbuild.nz/gallery) |
-| Testimonials | [/testimonials](https://jrmtopbuild.nz/testimonials) |
 | Service Area | [/service-area](https://jrmtopbuild.nz/service-area) |
 | Contact / Get a Quote | [/contact](https://jrmtopbuild.nz/contact) |
 | Privacy | [/privacy](https://jrmtopbuild.nz/privacy) |
+
+<!-- Hidden until real testimonials from the owner — restore by uncommenting: | Testimonials | [/testimonials](https://jrmtopbuild.nz/testimonials) | -->
 
 ## Getting started
 
