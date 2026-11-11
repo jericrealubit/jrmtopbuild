@@ -75,6 +75,7 @@ function Header() {
           >
             Gallery
           </Link>
+          {/* Hidden until real testimonials from the owner — restore by uncommenting
           <Link
             href="/testimonials"
             prefetch={false}
@@ -82,6 +83,7 @@ function Header() {
           >
             Testimonials
           </Link>
+          */}
           <Link
             href="/contact"
             prefetch={false}

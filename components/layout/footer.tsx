@@ -65,11 +65,13 @@ function Footer() {
                   Gallery
                 </Link>
               </li>
+              {/* Hidden until real testimonials from the owner — restore by uncommenting
               <li>
                 <Link href="/testimonials" className="hover:text-gold-light">
                   Testimonials
                 </Link>
               </li>
+              */}
               <li>
                 <Link href="/service-area" className="hover:text-gold-light">
                   Service Area

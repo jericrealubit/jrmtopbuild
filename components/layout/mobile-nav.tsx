@@ -12,7 +12,8 @@ const navLinks = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/gallery", label: "Gallery" },
-  { href: "/testimonials", label: "Testimonials" },
+  // Hidden until real testimonials from the owner — restore by uncommenting
+  // { href: "/testimonials", label: "Testimonials" },
   { href: "/contact", label: "Contact" },
 ]
 
